@@ -1,9 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Shield, Menu, X } from "lucide-react";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border/50">
@@ -35,7 +37,11 @@ export function Header() {
 
           {/* Desktop CTA Buttons */}
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="outline" className="border-primary text-primary hover:bg-primary/10">
+            <Button 
+              variant="outline" 
+              onClick={() => navigate('/auth')}
+              className="border-primary text-primary hover:bg-primary/10"
+            >
               Sign In
             </Button>
             <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">
@@ -89,7 +95,11 @@ export function Header() {
                 Contact
               </a>
               <div className="px-3 py-2 space-y-2">
-                <Button variant="outline" className="w-full border-primary text-primary hover:bg-primary/10">
+                <Button 
+                  variant="outline" 
+                  onClick={() => navigate('/auth')}
+                  className="w-full border-primary text-primary hover:bg-primary/10"
+                >
                   Sign In
                 </Button>
                 <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">

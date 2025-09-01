@@ -1,7 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Shield, Star, Clock, Users } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 export function Hero() {
+  const navigate = useNavigate();
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-primary/10 via-background to-secondary/10 px-4 md:px-6">
       {/* Decorative pattern overlay */}
@@ -34,6 +36,7 @@ export function Hero() {
         <div className="space-y-4">
           <Button 
             size="lg" 
+            onClick={() => navigate('/book')}
             className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
           >
             Book Your Bodyguard Now
