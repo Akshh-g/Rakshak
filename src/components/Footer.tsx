@@ -68,24 +68,24 @@ export function Footer() {
               <div className="space-y-3 text-sm text-background/80">
                 <div className="flex items-center gap-2">
                   <Phone className="h-4 w-4" />
-                  <span>+91 9876 543 210</span>
+                  <span>+91 9753873378</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Mail className="h-4 w-4" />
-                  <span>support@rakshak.in</span>
+                  <span>akshatgoswami2006@gmail.com</span>
                 </div>
                 <div className="flex items-start gap-2">
                   <MapPin className="h-4 w-4 mt-0.5" />
                   <span>
-                    Business Bay, Mumbai,<br />
-                    Maharashtra 400001
+                    Jagatpura, Jaipur,<br />
+                    Rajasthan
                   </span>
                 </div>
               </div>
               <div className="pt-2">
                 <p className="text-xs text-background/60">
                   24/7 Emergency Support<br />
-                  Response Time: &lt; 15 minutes
+                  Response Time: &lt; 99 minutes
                 </p>
               </div>
             </div>
@@ -96,7 +96,7 @@ export function Footer() {
         <div className="border-t border-background/20 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-background/60">
-              © 2024 Rakshak Security Services. All rights reserved.
+              © 2025 Rakshak Security Services. All rights reserved.
             </p>
             <div className="flex flex-wrap gap-6 text-sm text-background/60">
               <a href="#" className="hover:text-background transition-colors">Privacy Policy</a>
